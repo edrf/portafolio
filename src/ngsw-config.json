@@ -1,0 +1,54 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js",
+          "/manifest.json"
+        ],
+        "urls": [
+          "https://angular-html-25cf9.firebaseio.com/productos_idx/**",
+        "https://angular-html-25cf9.firebaseio.com/productos/**",
+        "https://angular-html-4abe2.firebaseio.com/equipo/**"
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups":  [
+    {
+      "name": "productos-api",
+      "urls": [
+        "https://angular-html-25cf9.firebaseio.com/productos_idx.json",
+        "https://angular-html-25cf9.firebaseio.com/productos.json",
+        "https://angular-html-4abe2.firebaseio.com/equipo.json",
+        "https://angular-html-25cf9.firebaseio.com/productos_idx/**",
+        "https://angular-html-25cf9.firebaseio.com/productos/**",
+        "https://angular-html-4abe2.firebaseio.com/equipo/**"
+      ],
+      "version": 1,
+      "cacheConfig": {
+      "maxSize": 20,
+      "maxAge": "1h",
+      "timeout": "5s",
+      "strategy": "freshness"
+    }
+  }
+]
+}
+
