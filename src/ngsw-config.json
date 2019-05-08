@@ -6,6 +6,7 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
+          "/index.html",
           "/favicon.ico",
           "/index.html",
           "/*.css",
@@ -45,7 +46,7 @@
       "cacheConfig": {
       "maxSize": 20,
       "maxAge": "1h",
-      "timeout": "5s",
+      "timeout": "1m",
       "strategy": "freshness"
     }
   }
